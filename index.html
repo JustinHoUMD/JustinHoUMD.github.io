@@ -41,14 +41,11 @@
             var UserObject = Parse.Object.extend("Users");
             var userObject = new UserObject();
             userObject.save({email: userEmail}).then(function(object) {
+            document.getElementById("signup").value= "";
             alert("Thanks for signing up!");
-            var form = document.getElementById("signup");
-            form.reset();
         });
         }else{
             alert("Please enter a valid email");
-            var form = document.getElementById("signup");
-            form.reset();
         }
         }
         function validateEmail(email) {
@@ -104,10 +101,10 @@
                         <h3>Routes of Action</h3>
                         <h3>February 12-14 | College Park, MD</h3>
                         <hr class="intro-divider">
-                         <div class="input-group">
+                         <div class="input-group col-xs-4 col-sm-offset-4">
       <input type="text" class="form-control" placeholder="Email" id="emailText">
       <div class="input-group-btn">
-        <button onclick="storeEmail()" class="btn btn-default btn-rounded-right" type="button" id="signup">Get Updates</button>
+        <button onclick="storeEmail()" class="btn btn-default btn-rounded-right" type="button">Get Updates</button>
       </div>
     </div><!-- /input-group -->
                     </div>
