@@ -188,5 +188,7 @@ div.item {
 }
 
 .caption {
-    display:block;
+    display:block;  
 }
+
+.top-buffer { margin-top:30px; }
