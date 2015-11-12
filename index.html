@@ -41,8 +41,8 @@
             var UserObject = Parse.Object.extend("Users");
             var userObject = new UserObject();
             userObject.save({email: userEmail}).then(function(object) {
-            document.getElementById("signup").value= "";
             alert("Thanks for signing up!");
+            document.getElementById("signup").value= "";
         });
         }else{
             alert("Please enter a valid email");
