@@ -42,9 +42,13 @@
             var userObject = new UserObject();
             userObject.save({email: userEmail}).then(function(object) {
             alert("Thanks for signing up!");
+            var form = document.getElementById("signup");
+            form.reset();
         });
         }else{
             alert("Please enter a valid email");
+            var form = document.getElementById("signup");
+            form.reset();
         }
         }
         function validateEmail(email) {
@@ -103,7 +107,7 @@
                          <div class="input-group">
       <input type="text" class="form-control" placeholder="Email" id="emailText">
       <div class="input-group-btn">
-        <button onclick="storeEmail()" class="btn btn-default btn-rounded-right" type="button">Get Updates</button>
+        <button onclick="storeEmail()" class="btn btn-default btn-rounded-right" type="button" id="signup">Get Updates</button>
       </div>
     </div><!-- /input-group -->
                     </div>
