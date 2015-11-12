@@ -42,7 +42,7 @@
             var userObject = new UserObject();
             userObject.save({email: userEmail}).then(function(object) {
             alert("Thanks for signing up!");
-            document.getElementById("signup").value= "";
+            document.getElementById("emailText").value= "";
         });
         }else{
             alert("Please enter a valid email");
