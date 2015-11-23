@@ -21,6 +21,16 @@ h6 {
     font-weight: 700;
 }
 
+img.displayed {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h5.displayed {
+    text-align: center;
+}
+
 .topnav {
     font-size: 14px; 
 }
