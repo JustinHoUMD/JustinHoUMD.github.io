@@ -33,37 +33,6 @@
 </head>
 
 <body>
-
-     <script> 
-        Parse.initialize("ahTfoLIhxm4cJBwXrrWMNWQSyI6yQpaADJeyxrbn", "FL48pDrGFUMuVqOMaUP3VMNqDwooPrUpFIzYYXcJ");
-        function storeEmail(){
-            var userEmail = document.getElementById('emailText').value;
-            if(validateEmail(userEmail)){
-            var UserObject = Parse.Object.extend("Users");
-            var userObject = new UserObject();
-            userObject.save({email: userEmail}).then(function(object) {
-                alert("Thanks for signing up!");
-                document.getElementById("emailText").value= "";
-            });
-            } else {
-                alert("Please enter a valid email");
-            }
-        }
-
-        function validateEmail(email) {
-            var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-            return re.test(email);
-        }
-
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-70245921-1', 'auto');
-        ga('send', 'pageview');
-    </script> 
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -200,10 +169,10 @@
                             </span>
                         </div>
                         <div class="col-sm-4 col-lg-4 column item top-buffer">
-                            <img src="img/Joy.jpg" class="img-circle"></img>
+                            <img src="img/kelly2.jpg" class="img-circle"></img>
                             <span class="caption">
-                                <h4>Joy Liu</h4>
-                                <p>Joy Liu is currently the Director of Education at MOCA. She has developed education and outreach programs for museums and community organizations in urban and transitional communities in the U.S. and abroad. She was a Peace Corps Volunteer in South Africa and in the Republic of Georgia. As an artist and educator, she has developed and led a number of youth development programs focused on art, literacy, and social justice. Liu holds a B.A. in Studio Art at the University of California Irvine, and a M.A. in Art and Visual Culture Education from the University of Arizona.</p>
+                                <h4>Kelly Shih</h4>
+                                <p>Kelly Shih is a recent Maryland graduate and UMD TASA alum currently working as a Human Capital Analyst for Deloitte Consulting's federal practice in DC. She most recently served as the Political Internship Program Director and National Board member for the Taiwanese American Citizens League (TACL). In college, she was involved with TASA for all four years, ranging from Junior Officer to President. She enjoys chit-chatting, traveling, yoga, reading, dancing, and karaoke.</p>
                             </span>
                         </div>
                         <div class="col-sm-4 col-lg-4 column item top-buffer">
