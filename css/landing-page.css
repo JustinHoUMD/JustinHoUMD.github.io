@@ -21,6 +21,16 @@ h6 {
     font-weight: 700;
 }
 
+.sidebar {
+   width: 45px;
+   height: 150px;
+   position: fixed;
+   right: 0px;
+   top: 300px;
+}
+
+
+
 img.displayed {
     display:block;
     margin-left: auto;
