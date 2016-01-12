@@ -26,9 +26,17 @@ img.displayed {
     margin-left: auto;
     margin-right: auto;
 }
+li {
+    text-align: left;
+}
 
 h5.displayed {
     text-align: center;
+}
+
+p.leftalign {
+    text-align: left;
+    font-weight: bold;
 }
 
 .topnav {
